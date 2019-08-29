@@ -10,7 +10,7 @@
 
 
 .header
-	background-color: $accent
+	background-color: #224b7a
 	padding: 15px 0
 	transition: all .3s
 	z-index: 1001
@@ -21,14 +21,59 @@
 		justify-content: space-between
 		align-items: center
 
+	&__logo
+		max-width: 280px
+		margin-right: 10px
+
+		img
+			width: 100%
+
 	&__btn
 		display: flex
+		align-items: center
 
 		.btn
 			margin-right: 25px
 
 			&:last-child
 				margin-right: 0
+
+	&__time
+		display: flex
+		flex-direction: column
+		line-height: 1
+		margin-right: 15px
+
+		div
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			margin-bottom: 8px
+			&:last-child
+				margin-bottom: 0
+
+		i
+			margin: 0 8px
+
+		p
+			display: flex
+			flex-direction: column
+			text-align: center
+
+		span
+			font-size: 16px
+			margin-right: 10px
+
+		b
+			font-size: 18px
+
+		strong
+			font-size: 16px
+			font-weight: 600
+
+
+.nav
+	transition: all .6s
 
 
 .index
@@ -49,10 +94,7 @@
 			margin-bottom: 0
 
 	h2
-		font-size: 32px
 		margin-bottom: 30px
-		font-weight: 400
-		text-transform: uppercase
 
 
 .form
@@ -189,7 +231,7 @@
 		margin-bottom: 50px
 
 		&:last-child
-			margin-right: 0
+			margin-bottom: 0
 
 	&__item
 		padding: 20px
@@ -199,11 +241,15 @@
 		text-align: center
 		line-height: 1
 		margin-right: 50px
+		display: flex
+		flex-direction: column
+		justify-content: center
 
 		&:last-child
 			margin-right: 0
 
 		img
+			max-width: 210px
 			width: 100%
 			margin-bottom: 10px
  
@@ -211,11 +257,9 @@
 .crumbs
 	display: flex
 	align-items: flex-end
+	flex-wrap: wrap
 	line-height: 1
 	margin-bottom: 90px
-
-	h2
-		margin-bottom: 0
 
 	a
 		color: #fff
@@ -223,6 +267,7 @@
 		font-weight: 700
 		text-transform: uppercase
 		transition: all .3s
+		margin-bottom: 5px
 
 		&:hover,
 		&:focus
@@ -230,6 +275,7 @@
 
 	p
 		font-size: 24px
+		margin-bottom: 5px
 
 	span
 		display: block
@@ -258,6 +304,7 @@
 	&__content
 		display: flex
 		justify-content: space-between
+		align-items: flex-start
 		flex-wrap: wrap
 		margin-bottom: 40px
 
@@ -265,7 +312,6 @@
 		padding: 30px
 		border-radius: 30px
 		background-color: rgba(#edeef0, .32)
-		margin-bottom: 25px
 		width: 60%
 
 	&__text
@@ -308,11 +354,74 @@
 			margin-bottom: 25px
 
 
+.profile
+	padding: 50px 0
 
+	h3
+		font-size: 18px
+		color: $btn
+		margin-bottom: 30px
+		text-transform: uppercase
+
+	&__title
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 50px
+
+		h2
+			margin-bottom: 0
+
+		img
+			margin-right: 15px
+
+		a
+			color: #fff
+			text-transform: uppercase
+			font-weight: 700
+			line-height: 1
+
+	&__form
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: flex-start
+
+
+	&__foto
+		width: 32%
+		padding: 40px 90px
+		border-radius: 30px
+		background-color: rgba(#edeef0, .32)
+		margin-bottom: 25px
+
+		img
+			width: 100%
+			margin-bottom: 60px
+
+		.btn
+			width: 100%
+			margin-bottom: 15px
+
+			&:last-child
+				margin-bottom: 0
+
+	&__info
+		width: 64%
+		padding: 40px 90px
+		border-radius: 30px
+		background-color: rgba(#edeef0, .32)
+		margin-bottom: 25px
+
+		div
+			margin-bottom: 20px
+
+			&:last-child
+				margin-bottom: 0
 
 
 .footer
-	background-color: $accent
+	background-color: #224b7a
 	padding: 30px 0
 
 	&__container

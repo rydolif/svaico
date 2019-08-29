@@ -1,12 +1,13 @@
 .btn
 	position: relative
-	display: inline-block
+	display: flex
+	align-items: center
+	justify-content: center
 	height: 50px
-	border: none
+	border: 1px solid $btn
 	outline: none
 	border-radius: 15px
 	background-color: $btn
-	text-align: center
 	text-transform: uppercase
 	font-size: 18px
 	color: #fff
@@ -14,15 +15,17 @@
 	letter-spacing: .2px
 	transition: all .6s
 	width: 210px
+	white-space: nowrap
 
 	&:hover,
 	&:focus
 		outline: none
-		border: none
+		border: 1px solid #fff
 		text-decoration: none
 		cursor: pointer
 		box-shadow: 0 5px 10px rgba($btn, .4)
 		color: #fff
+		background-color: transparent
 
 	img
 		margin-right: 15px
