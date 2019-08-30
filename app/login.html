@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Главная</title>
+	<title>Воход</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -41,21 +41,25 @@
 	<section class="index">
 		<div class="container">
 
-			<a href="/index1.html" class="btn">Главная</a>
-			<br>
-			<a href="/news.html" class="btn">Новости</a>
-			<br>
-			<a href="/article.html" class="btn">Статья</a>
-			<br>
-			<a href="/team.html" class="btn">Команда</a>
-			<br>
-			<a href="/profile.html" class="btn">Профиль</a>
-			<br>
-			<a href="/vyvod.html" class="btn">Вывод</a>
-			<br>
-			<a href="/register.html" class="btn">Регистрация</a>
-			<br>
-			<a href="/login.html" class="btn">Войти</a>
+			<form class="form__block index__block form">
+				<h2><b>Воход</b></h2>
+
+				<div>
+					<input type="text" placeholder="Логин">
+				</div>
+				<div>
+					<input type="password" placeholder="Пароль">
+				</div>
+				<div class="form__line">
+					<input type="checkbox" id="remember">
+					<label for="remember">Запомнить меня</label>
+					<a href="#">Забыл пароль?</a>
+				</div>
+				<div class="form__btn">
+					<button class="btn"><b>Войти</b></button>
+				</div>
+
+			</form>
 
 		</div>
 	</section>

@@ -1,6 +1,6 @@
 $(function() {
 	//--------------------------------------scroll------------------------------
-	$('.news__comment_box').jScrollPane();
+	$('.article__comment_box').jScrollPane();
 
 	//------------------------------гамбургер-----------------------------
 	$('.hamburger').click(function() {
@@ -20,5 +20,5 @@ $(function() {
 
 //--------------------------------------scroll------------------------------
   $(window).resize(function(event) {
-   $('.news__comment_box').jScrollPane();
+   $('.article__comment_box').jScrollPane();
   });
