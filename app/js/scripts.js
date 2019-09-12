@@ -1770,7 +1770,9 @@
 
 $(function() {
 	//--------------------------------------scroll------------------------------
-	$('.article__comment_box').jScrollPane();
+	$('.article__comment_box').jScrollPane().each(function(){
+	    $(this).data('jsp').scrollToBottom();
+	});
 
 	//------------------------------гамбургер-----------------------------
 	$('.hamburger').click(function() {
@@ -1790,5 +1792,7 @@ $(function() {
 
 //--------------------------------------scroll------------------------------
   $(window).resize(function(event) {
-   $('.article__comment_box').jScrollPane();
+	$('.article__comment_box').jScrollPane().each(function(){
+	    $(this).data('jsp').scrollToBottom();
+	});
   });
